@@ -1,4 +1,4 @@
-# [AAAI 2026] Divide-and-Conquer Decoupled Network for Cross-Domain Few-Shot Segmentation
+# [AAAI 2026 Oral] Divide-and-Conquer Decoupled Network for Cross-Domain Few-Shot Segmentation
 
 The official implementation of "Divide-and-Conquer Decoupled Network for Cross-Domain Few-Shot Segmentation".
 
@@ -156,6 +156,7 @@ We also thank [PATNet](https://github.com/slei109/PATNet) and other FSS and CD-F
 [1] Shuo Lei, Xuchao Zhang, Jianfeng He, Fanglan Chen, Bowen Du, and Chang-Tien Lu. Cross-domain few-shot semantic segmentation. ECCV, 2022.
 
 [2] Jiahao Nie,  Yun Xing, Gongjie Zhang, Pei Yan, Aoran Xiao, Yap-Peng Tan, Alex C Kot, Shijian Lu. Cross-Domain Few-Shot Segmentation via Iterative Support-Query Correspondence Mining. CVPR, 2024.
+
 
 
 
