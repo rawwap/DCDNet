@@ -54,7 +54,9 @@ The following datasets are used for evaluation in CD-FSS:
     Direct: https://drive.google.com/file/d/16TgqOeI_0P41Eh3jWQlxlRXG9KIqtMgI/view
 
 ## Pre-trained ResNet Models
+
 Download pre-trained ResNet models: [GoogleDrive](https://drive.google.com/file/d/1HlyNsgYr9RYbbpPrE7FB6bc_2wCPBEx_/view?usp=sharing)
+
 Download SSP pre-trained models: [GoogleDrive](https://drive.google.com/file/d/1NBpgKctAx9h27XdnAOLXlyjdSVrx5EG6/view?usp=sharing)
 
 
@@ -154,6 +156,7 @@ We also thank [PATNet](https://github.com/slei109/PATNet) and other FSS and CD-F
 [1] Shuo Lei, Xuchao Zhang, Jianfeng He, Fanglan Chen, Bowen Du, and Chang-Tien Lu. Cross-domain few-shot semantic segmentation. ECCV, 2022.
 
 [2] Jiahao Nie,  Yun Xing, Gongjie Zhang, Pei Yan, Aoran Xiao, Yap-Peng Tan, Alex C Kot, Shijian Lu. Cross-Domain Few-Shot Segmentation via Iterative Support-Query Correspondence Mining. CVPR, 2024.
+
 
 
 
