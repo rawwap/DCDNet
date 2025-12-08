@@ -71,7 +71,7 @@ Download SSP pre-trained models: [GoogleDrive](https://drive.google.com/file/d/1
     |   |   |       ├── origin/                         # image
     |   |   |       └── groundtruth/                    # mask
     |   |   ├── 2/                                      # category
-    |   |   └── ...                                     # target dataset: isic
+    |   |   └── ...
     |   ├── ISIC                                        # target dataset: isic
     |   |   ├── ISIC2018_Task1-2_Training_Input/        # image
     |   |   |   ├── 1/                                  # category
@@ -154,6 +154,7 @@ We also thank [PATNet](https://github.com/slei109/PATNet) and other FSS and CD-F
 [1] Shuo Lei, Xuchao Zhang, Jianfeng He, Fanglan Chen, Bowen Du, and Chang-Tien Lu. Cross-domain few-shot semantic segmentation. ECCV, 2022.
 
 [2] Jiahao Nie,  Yun Xing, Gongjie Zhang, Pei Yan, Aoran Xiao, Yap-Peng Tan, Alex C Kot, Shijian Lu. Cross-Domain Few-Shot Segmentation via Iterative Support-Query Correspondence Mining. CVPR, 2024.
+
 
 
 
