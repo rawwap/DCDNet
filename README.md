@@ -54,7 +54,9 @@ The following datasets are used for evaluation in CD-FSS:
     Direct: https://drive.google.com/file/d/16TgqOeI_0P41Eh3jWQlxlRXG9KIqtMgI/view
 
 ## Pre-trained ResNet Models
-Download pre-trained ResNet models: [GoogleDrive](https://drive.google.com/drive/folders/1oeDfNks2ToOlsDlMArozLx2z2l1QDP51?usp=sharing)
+Download pre-trained ResNet models: [GoogleDrive](https://drive.google.com/file/d/1HlyNsgYr9RYbbpPrE7FB6bc_2wCPBEx_/view?usp=sharing)
+Download SSP pre-trained models: [GoogleDrive](https://drive.google.com/file/d/1NBpgKctAx9h27XdnAOLXlyjdSVrx5EG6/view?usp=sharing)
+
 
 ### File Organization
 ```
@@ -68,8 +70,9 @@ Download pre-trained ResNet models: [GoogleDrive](https://drive.google.com/drive
     |   |   |   └── test/
     |   |   |       ├── origin/                         # image
     |   |   |       └── groundtruth/                    # mask
-    |   |   └── ...
-    |   ├── ISIC/                                       # target dataset: isic
+    |   |   ├── 2/                                      # category
+    |   |   └── ...                                     # target dataset: isic
+    |   ├── ISIC                                        # target dataset: isic
     |   |   ├── ISIC2018_Task1-2_Training_Input/        # image
     |   |   |   ├── 1/                                  # category
     |   |   |   └── ...
@@ -84,12 +87,27 @@ Download pre-trained ResNet models: [GoogleDrive](https://drive.google.com/drive
     |
     ├── pretrained/                                     # pretrained resnet models
     |   ├── resnet50.pth
-    |   ├── resnet101.pth
     |   └── Ori_SSP_trained_on_VOC.pth
     |
     └── trained_models/                                 # official trained models
         ├── deepglobe/                                  # target dataset
         └── ...
+```
+
+## Environment
+
+Conda environment settings:
+
+```bash
+conda create -n dcdnet python=3.10
+conda activate dcdnet
+
+pip install uv
+
+# Install PyTorch 2.2.0 with CUDA 12.1
+uv pip install torch==2.2.0 torchvision==0.17.0 torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+uv pip install -r requirements.txt
 ```
 
 ## Run the code
