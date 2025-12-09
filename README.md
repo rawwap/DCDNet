@@ -1,4 +1,4 @@
-# [AAAI 2026 Oral] Divide-and-Conquer Decoupled Network for Cross-Domain Few-Shot Segmentation
+# [AAAI 2026] Divide-and-Conquer Decoupled Network for Cross-Domain Few-Shot Segmentation
 
 The official implementation of "Divide-and-Conquer Decoupled Network for Cross-Domain Few-Shot Segmentation".
 
@@ -53,11 +53,13 @@ The following datasets are used for evaluation in CD-FSS:
 
     Direct: https://drive.google.com/file/d/16TgqOeI_0P41Eh3jWQlxlRXG9KIqtMgI/view
 
+For convenience, you can also download the target domain datasets directly from our organized [Baidu Netdisk](https://pan.baidu.com/s/1_GUff9OX03S-SyRBjXHFJQ?pwd=vc29).
+
 ## Pre-trained ResNet Models
 
-Download pre-trained ResNet models: [GoogleDrive](https://drive.google.com/file/d/1HlyNsgYr9RYbbpPrE7FB6bc_2wCPBEx_/view?usp=sharing)
+Download pre-trained ResNet models: [GoogleDrive](https://drive.google.com/file/d/1HlyNsgYr9RYbbpPrE7FB6bc_2wCPBEx_/view?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1yOUPfa_DFNhT6EoxG5Mcqg?pwd=5yx8).
 
-Download SSP pre-trained models: [GoogleDrive](https://drive.google.com/file/d/1NBpgKctAx9h27XdnAOLXlyjdSVrx5EG6/view?usp=sharing)
+Download SSP pre-trained models: [GoogleDrive](https://drive.google.com/file/d/1NBpgKctAx9h27XdnAOLXlyjdSVrx5EG6/view?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1EkETN-GNUR0VQZHN81C1bw?pwd=jr9n).
 
 
 ### File Organization
@@ -73,7 +75,7 @@ Download SSP pre-trained models: [GoogleDrive](https://drive.google.com/file/d/1
     |   |   |       ├── origin/                         # image
     |   |   |       └── groundtruth/                    # mask
     |   |   ├── 2/                                      # category
-    |   |   └── ...
+    |   |   └── ...                                     # target dataset: isic
     |   ├── ISIC                                        # target dataset: isic
     |   |   ├── ISIC2018_Task1-2_Training_Input/        # image
     |   |   |   ├── 1/                                  # category
@@ -118,17 +120,17 @@ Here is an example on ISIC dataset:
 
 First, you need to train a model on the source dataset:
 ```
-python train.py --dataset isic --cuda 0
+python train.py --data-root ./dataset --dataset isic --cuda 0
 ```
 
 Then, you need to fine-tuning the trained model on the target dataset:
 ```
-python finetuning.py --dataset isic --cuda 0
+python finetuning.py  --data-root ./dataset --dataset isic --cuda 0
 ```
 
 You can use our trained models for evaluation directly:
 ```
-python test.py --dataset isic --cuda 0
+python test.py --data-root ./dataset --dataset isic --cuda 0
 ```
 
 Please note that the performances may flutuate within a small range because of differnet batch-sizes, seeds, devices, and environments.
@@ -156,9 +158,6 @@ We also thank [PATNet](https://github.com/slei109/PATNet) and other FSS and CD-F
 [1] Shuo Lei, Xuchao Zhang, Jianfeng He, Fanglan Chen, Bowen Du, and Chang-Tien Lu. Cross-domain few-shot semantic segmentation. ECCV, 2022.
 
 [2] Jiahao Nie,  Yun Xing, Gongjie Zhang, Pei Yan, Aoran Xiao, Yap-Peng Tan, Alex C Kot, Shijian Lu. Cross-Domain Few-Shot Segmentation via Iterative Support-Query Correspondence Mining. CVPR, 2024.
-
-
-
 
 
 
