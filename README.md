@@ -2,7 +2,7 @@
 
 The official implementation of "Divide-and-Conquer Decoupled Network for Cross-Domain Few-Shot Segmentation".
 
-More detailed information is in the [PAPER](https://arxiv.org/abs/2511.07798).
+More detailed information is in the [PAPER](https://ojs.aaai.org/index.php/AAAI/article/view/37338).
 
 Authors: Runmin Cong, Anpeng Wang, Bin Wan, Cong Zhang, Xiaofei Zhou, Wei Zhang
 
@@ -140,11 +140,14 @@ Please note that the performances may flutuate within a small range because of d
 If you use this codebase for your research, please consider citing:
 
 ```
-@article{cong2025divide,
+@inproceedings{cong2026divide,
   title={Divide-and-Conquer Decoupled Network for Cross-Domain Few-Shot Segmentation},
   author={Cong, Runmin and Wang, Anpeng and Wan, Bin and Zhang, Cong and Zhou, Xiaofei and Zhang, Wei},
-  journal={arXiv preprint arXiv:2511.07798},
-  year={2025}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={5},
+  pages={3416--3424},
+  year={2026}
 }
 ```
 
